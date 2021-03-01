@@ -16,6 +16,7 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* InflationCalcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* InflationCalcTests.m */; };
 		356CA8338E56E54BFC0BCE4A /* libPods-InflationCalc-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F627C62CC91F3B7DF9FBCD2 /* libPods-InflationCalc-tvOS.a */; };
+		54A36F0525ECDF6A00FD47E6 /* AppCenter-Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54A36F0425ECDF6A00FD47E6 /* AppCenter-Config.plist */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		C487F799F9BE90A952F275ED /* libPods-InflationCalc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5659AD97F4BA9E26A922E10 /* libPods-InflationCalc.a */; };
 		C7014598612278DB2286C02E /* libPods-InflationCalc-InflationCalcTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D09FFAF7C9B14AB9B6BA98F4 /* libPods-InflationCalc-InflationCalcTests.a */; };
@@ -58,6 +59,7 @@
 		2D02E4901E0B4A5D006451C7 /* InflationCalc-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "InflationCalc-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F627C62CC91F3B7DF9FBCD2 /* libPods-InflationCalc-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InflationCalc-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4581DD9856F2481873CD0936 /* Pods-InflationCalc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InflationCalc.debug.xcconfig"; path = "Target Support Files/Pods-InflationCalc/Pods-InflationCalc.debug.xcconfig"; sourceTree = "<group>"; };
+		54A36F0425ECDF6A00FD47E6 /* AppCenter-Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppCenter-Config.plist"; sourceTree = "<group>"; };
 		6A1B98989D36D93487DBD443 /* Pods-InflationCalc-InflationCalcTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InflationCalc-InflationCalcTests.debug.xcconfig"; path = "Target Support Files/Pods-InflationCalc-InflationCalcTests/Pods-InflationCalc-InflationCalcTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7DFF4E36F1FC1316CEB9B140 /* Pods-InflationCalc-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InflationCalc-tvOS.release.xcconfig"; path = "Target Support Files/Pods-InflationCalc-tvOS/Pods-InflationCalc-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = InflationCalc/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				54A36F0425ECDF6A00FD47E6 /* AppCenter-Config.plist */,
 				13B07FAE1A68108700A75B9A /* InflationCalc */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* InflationCalcTests */,
@@ -194,7 +197,6 @@
 				0623CC8B024C14A470780A9C /* Pods-InflationCalc-tvOSTests.debug.xcconfig */,
 				FA6ABD279FBDB915DB6123BF /* Pods-InflationCalc-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -206,10 +208,12 @@
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "InflationCalcTests" */;
 			buildPhases = (
 				5B6760467DD315365934D2A3 /* [CP] Check Pods Manifest.lock */,
+				7E6BC3A87A7AFCC7B2B84F27 /* [CP] Prepare Artifacts */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
 				41B08367BC7C375B69AC2128 /* [CP] Copy Pods Resources */,
+				AA7E7991EB931C5EB320F0AA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,11 +231,13 @@
 			buildPhases = (
 				B8618A56E738F3D14A98A714 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
+				1871A6E2C0493D677E7EEF68 /* [CP] Prepare Artifacts */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				44FCAF03909686EB722974CA /* [CP] Copy Pods Resources */,
+				92AE9C5E2511CCCD0B2DA34B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -342,6 +348,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				54A36F0525ECDF6A00FD47E6 /* AppCenter-Config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +383,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		1871A6E2C0493D677E7EEF68 /* [CP] Prepare Artifacts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InflationCalc/Pods-InflationCalc-artifacts.sh",
+				"${PODS_ROOT}/AppCenter/AppCenter-SDK-Apple/AppCenterAnalytics.xcframework",
+				"${PODS_ROOT}/AppCenter/AppCenter-SDK-Apple/AppCenter.xcframework",
+				"${PODS_ROOT}/AppCenter/AppCenter-SDK-Apple/AppCenterCrashes.xcframework",
+			);
+			name = "[CP] Prepare Artifacts";
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/cocoapods-artifacts-${CONFIGURATION}.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InflationCalc/Pods-InflationCalc-artifacts.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -469,6 +496,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E6BC3A87A7AFCC7B2B84F27 /* [CP] Prepare Artifacts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InflationCalc-InflationCalcTests/Pods-InflationCalc-InflationCalcTests-artifacts.sh",
+				"${PODS_ROOT}/AppCenter/AppCenter-SDK-Apple/AppCenterAnalytics.xcframework",
+				"${PODS_ROOT}/AppCenter/AppCenter-SDK-Apple/AppCenter.xcframework",
+				"${PODS_ROOT}/AppCenter/AppCenter-SDK-Apple/AppCenterCrashes.xcframework",
+			);
+			name = "[CP] Prepare Artifacts";
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/cocoapods-artifacts-${CONFIGURATION}.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InflationCalc-InflationCalcTests/Pods-InflationCalc-InflationCalcTests-artifacts.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92AE9C5E2511CCCD0B2DA34B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InflationCalc/Pods-InflationCalc-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/cocoapods-artifacts-${CONFIGURATION}.txt",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InflationCalc/Pods-InflationCalc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA7E7991EB931C5EB320F0AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InflationCalc-InflationCalcTests/Pods-InflationCalc-InflationCalcTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/cocoapods-artifacts-${CONFIGURATION}.txt",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InflationCalc-InflationCalcTests/Pods-InflationCalc-InflationCalcTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B22E161CDEBD1FD4AEAC8F54 /* [CP] Check Pods Manifest.lock */ = {
